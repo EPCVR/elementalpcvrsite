@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1>Welcome to the Math Game!</h1>
+        <p>Select your level:</p>
+        <button class="level-button" data-level="5th">5th Grade</button>
+        <button class="level-button" data-level="prealgebra">Pre-Algebra</button>
+    </div>
+
+    <!-- Game Area -->
+    <div id="game-container" style="display: none;">
+        <!-- Score Display -->
+        <div id="score-board">
+            <span id="current-score">Score: 0</span>
+            <span id="top-score">Top Score: 0</span>
+        </div>
+
+        <!-- Progress Indicator -->
+        <div id="progress-indicator">
+            <span id="progress-text">Progress: 0%</span>
+        </div>
+
+        <!-- Question Display -->
+        <div id="question-display">
+            <p id="math-question">What is 2 + 2?</p>
+        </div>
+
+        <!-- Answer Buttons -->
+        <div id="answer-buttons">
+            <button class="answer-button">4</button>
+            <button class="answer-button">3</button>
+            <button class="answer-button">5</button>
+            <button class="answer-button">6</button>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" style="display: none;">
+        <h1>Game Over</h1>
+        <p>Your final score: <span id="final-score">0</span></p>
+        <button id="restart-button">Try Again</button>
+    </div>
+</body>
+</html>
